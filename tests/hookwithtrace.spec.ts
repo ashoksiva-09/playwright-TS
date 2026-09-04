@@ -21,7 +21,7 @@ test.afterEach(async () => {
 test('has title', async () => {
 
   // Expect a title "to contain" a substring.
-  await expect(page).not.toHaveTitle(/Playwright/);
+  await expect(page).toHaveTitle(/Playwright/);
 });
 
 test('get started link', async () => {
