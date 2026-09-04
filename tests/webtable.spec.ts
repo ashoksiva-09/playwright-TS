@@ -65,8 +65,8 @@ test("Webtable test", async ({ page }) => {
     await page.waitForTimeout(5000);
 })
 
-
-test.only("Pagination Web Table", async ({ page }) => {
+// test.only("Pagination Web Table", async ({ page }) => {
+test("Pagination Web Table", async ({ page }) => {
     await page.goto("https://testautomationpractice.blogspot.com/");
 
     const table = page.locator("//table[@id='productTable']/tbody");

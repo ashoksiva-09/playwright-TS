@@ -43,8 +43,8 @@ test("Calendar test1", async ({ page }) => {
     await page.waitForTimeout(5000);
 });
 
-
-test.only("Calendar test2", async ({ page }) => {
+// test.only("Calendar test2", async ({ page }) => {
+test("Calendar test2", async ({ page }) => {
     await page.goto("https://testautomationpractice.blogspot.com/");
 
     await page.locator("//*[@id='txtDate']").click();
